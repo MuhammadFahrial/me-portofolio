@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    --hero-bg: #14213D;
+    --second-bg: #FF9F1C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: sticky;
+    padding: 0 135px;
+    height: 70px;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+    background-color: white;
+}
+
+.nav-brand {
+    display: flex;
+    font-weight: bold;
+}
+
+nav img {
+    opacity: 0;
+}
+
+.nav-brand a {
+    color: #14213D;
+    font-size: 32px;
+}
+
+.nav-brand span {
+    color: #FF9F1C;
+}
+
+.nav-item ul {
+    display: flex;
+}
+
+.nav-item ul li a {
+    font-size: 18px;
+    color: #14213D;
+    margin: 0 10px;
+}
+
+.nav-item ul li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FF9F1C;
+}
+
+/* hero */
+.jumbotron {
+    background-color: #14213D;
+    height: 500px;
+}
+
+.jumbotron .container {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    margin: auto 200px;
+}
+
+.jumbotron-information {
+    font-family: var(--font);
+    width: 500px;
+    margin: auto 0;
+    z-index: 1;
+}
+
+.jumbotron-information h3 {
+    font-family: var(--font);
+    font-size: 24px;
+}
+
+.jumbotron-information h1 {
+    font-family: var(--font);
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.jumbotron-information span {
+    font-family: var(--font);
+    color: #FF9F1C;
+    border-bottom: 3px solid white;
+}
+
+.jumbotron-information p {
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.jumbotron-information .button-talk {
+    margin-top: 30px;
+}
+
+.jumbotron-information a {
+    font-family: var(--font);
+    color: white;
+    font-weight: 300;
+    background-color: #FF9F1C;
+    padding: 10px 20px;
+}
+
+.jumbotron-img {
+    margin: 45px 0;
+    background-color: #FF9F1C;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.jumbotron-img img {
+    height: 480px;
+    position: absolute;
+    top: 90px;
+    margin-left: 36px;
+}
+
+section .container {
+    background-color: #FF9F1C;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    color: white;
+}
+
+section .container .title h1 {
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 34px;
+    padding-bottom: 30px;
+}
+
+section .container .title span {
+    color: #14213D;
+    font-weight: 100;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+section .container .text {
+    margin: 0 210px;
+}
+
+section .container .text p {
+    font-family: var(--font);
+    font-weight: 300;
+    color: black;
+}
+
+section .container .tools-skill .row-1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+section .container .tools-skill .row-1 p {
+    font-family: var(--font);
+    font-weight: 300;
+    color: black;
+}
+
+section .container .tools-skill .row-1 img {
+    width: 110px;
+}
+
+section .about {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 100px 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+section .about .img img {
+    width: 300px;
+}
+
+section .about .about-me {
+    width: 500px;
+}
+
+section .about .about-me h1 {
+    font-family: var(--font);
+    font-size: 34px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #14213D;
+}
+
+section .about .about-me .button-cv {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0;
+}
+
+section .about .about-me .button-cv a {
+    background-color: #FF9F1C;
+    padding: 20px 30px;
+    color: #14213D;
+}
+
+section .bg-contact {
+    background-image: url('../img/bg/bg-maps.jpg');
+    background-size: cover;
+}
+
+section .contact {
+    background-color: rgba(20, 33, 61, 0.7);
+    color: white;
+    padding: 110px 220px;
+}
+
+section .contact h1 {
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 34px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 210px;
+    padding-bottom: 10px;
+}
+
+section .contact p {
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+section .contact .contact-label {
+    display: flex;
+    gap: 10px;
+}
+
+section .contact .contact-label .img-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+    gap: 14px;
+}
+
+section .contact .contact-label .img-contact img {
+    width: 20px;
+}
+
+section .contact .contact-label .text-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+    gap: 5px;
+}
+
+footer {
+    background-color: #14213D;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    gap: 50px;
+}
+
+footer .socialmedia {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .socialmedia img {
+    width: 40px;
+}
+
+footer p {
+    font-family: var(--font);
+    font-weight: 100;
+    padding: 1px 0;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .wrap {
+        width: 100%;
+    }
+
+    /* Navbar */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        position: sticky;
+        padding: 0 50px;
+        height: 70px;
+        align-items: center;
+        z-index: 2;
+        top: 0;
+        background-color: white;
+    }
+
+    nav img {
+        opacity: 0;
+    }
+
+    .nav-brand {
+        display: flex;
+        font-weight: bold;
+    }
+
+    .nav-brand a {
+        color: #14213D;
+        font-size: 32px;
+    }
+
+    .nav-brand span {
+        color: #FF9F1C;
+    }
+
+    .nav-item ul {
+        display: flex;
+    }
+
+    .nav-item ul li a {
+        font-size: 18px;
+        color: #14213D;
+        margin: 0 10px;
+    }
+
+    .nav-item ul li a:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #FF9F1C;
+    }
+
+    /* hero */
+    .jumbotron {
+        background-color: #14213D;
+        height: 680px;
+    }
+
+    .jumbotron .container {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        margin: auto 70px;
+        padding-top: 60px;
+    }
+
+    .jumbotron-information {
+        font-family: var(--font);
+        width: 665px;
+        z-index: 1;
+    }
+
+    .jumbotron-information h3 {
+        font-family: var(--font);
+        font-size: 24px;
+    }
+
+    .jumbotron-information h1 {
+        font-family: var(--font);
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+
+    .jumbotron-information span {
+        font-family: var(--font);
+        color: #FF9F1C;
+        border-bottom: 3px solid white;
+    }
+
+    .jumbotron-information p {
+        font-family: var(--font);
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .jumbotron-information .button-talk {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+    }
+
+    .jumbotron-information a {
+        font-family: var(--font);
+        color: white;
+        font-weight: 300;
+        background-color: #FF9F1C;
+        padding: 10px 20px;
+    }
+
+    .jumbotron-img {
+        background-color: #FF9F1C;
+        width: 300px;
+        height: 300px;
+        padding: 150px 0;
+        margin: 60px auto;
+    }
+
+    .jumbotron-img img {
+        height: 370px;
+        position: absolute;
+        top: 380px;
+        left: 220px;
+    }
+
+    section .container {
+        background-color: #FF9F1C;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        align-items: center;
+        color: white;
+    }
+
+    section .container .title h1 {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 34px;
+        padding-bottom: 30px;
+    }
+
+    section .container .title span {
+        color: #14213D;
+        font-weight: 100;
+        border-bottom: 3px solid white;
+        padding-bottom: 10px;
+    }
+
+    section .container .text {
+        margin: 0 260px;
+        width: 665px;
+    }
+
+    section .container .text p {
+        font-family: var(--font);
+        font-weight: 300;
+        color: black;
+    }
+
+    section .container .tools-skill .row-1 {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    section .container .tools-skill .row-1 p {
+        font-family: var(--font);
+        font-weight: 300;
+        color: black;
+    }
+
+    section .container .tools-skill .row-1 img {
+        width: 110px;
+    }
+
+    section .about {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 50px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    section .about .img img {
+        width: 300px;
+    }
+
+    section .about .about-me {
+        width: 665px;
+    }
+
+    section .about .about-me h1 {
+        font-family: var(--font);
+        font-size: 34px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: #14213D;
+    }
+
+    section .about .about-me .button-cv {
+        text-align: center;
+        margin: 30px auto;
+        padding: 20px 0;
+    }
+
+    section .about .about-me .button-cv a {
+        background-color: #FF9F1C;
+        padding: 20px 30px;
+        color: #14213D;
+    }
+
+    section .bg-contact {
+        background-image: url('../img/bg/bg-maps.jpg');
+        background-size: cover;
+    }
+
+    section .contact {
+        background-color: rgba(20, 33, 61, 0.7);
+        color: white;
+        padding: 110px 220px;
+    }
+
+    section .contact h1 {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 34px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+        width: 210px;
+        padding-bottom: 10px;
+    }
+
+    section .contact p {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    section .contact .contact-label {
+        display: flex;
+        gap: 10px;
+    }
+
+    section .contact .contact-label .img-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4px;
+        gap: 14px;
+    }
+
+    section .contact .contact-label .img-contact img {
+        width: 20px;
+    }
+
+    section .contact .contact-label .text-contact {
+        display: flex;
+        flex-direction: column;
+        padding: 6px 0;
+        gap: 5px;
+    }
+
+    footer {
+        background-color: #14213D;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        gap: 50px;
+    }
+
+    footer .socialmedia {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer .socialmedia img {
+        width: 40px;
+    }
+
+    footer p {
+        font-family: var(--font);
+        font-weight: 100;
+        padding: 1px 0;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .wrap {
+        width: 100%;
+    }
+
+    /* Navbar */
+    nav {
+        display: block;
+        margin: auto;
+        position: sticky;
+        height: 6vh;
+        z-index: 2;
+        top: 0;
+        background-color: white;
+    }
+
+    nav img {
+        opacity: 1;
+        position: absolute;
+        right: 18px;
+        width: 30px;
+        top: 13px;
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        height: 6.5vh;
+    }
+
+    .nav-brand a {
+        color: #14213D;
+        font-size: 16px;
+    }
+
+    .nav-brand span {
+        color: #FF9F1C;
+    }
+
+    nav .nav-item {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0;
+        background-color: aliceblue;
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+
+    }
+
+    nav .active {
+        opacity: 1;
+    }
+
+    .nav-item ul {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .nav-item ul li a {
+        font-size: 16px;
+        color: #14213D;
+    }
+
+    .nav-item ul li a:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #FF9F1C;
+    }
+
+    /* hero */
+    .jumbotron {
+        background-color: #14213D;
+        height: 360px;
+    }
+
+    .jumbotron .container {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        padding-top: 30px;
+    }
+
+    .jumbotron-information {
+        font-family: var(--font);
+        width: 360px;
+    }
+
+    .jumbotron-information h3 {
+        font-family: var(--font);
+        font-size: 16px;
+    }
+
+    .jumbotron-information h1 {
+        font-family: var(--font);
+        font-size: 29px;
+        margin-bottom: 15px;
+    }
+
+    .jumbotron-information span {
+        font-family: var(--font);
+        color: #FF9F1C;
+        border-bottom: 3px solid white;
+    }
+
+    .jumbotron-information p {
+        font-family: var(--font);
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .jumbotron-information .button-talk {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+    }
+
+    .jumbotron-information a {
+        font-family: var(--font);
+        color: white;
+        font-weight: 300;
+        background-color: #FF9F1C;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .jumbotron-img {
+        background-color: #FF9F1C;
+        width: 100px;
+        height: 100px;
+        padding: 50px 20px;
+        margin: 40px 90px 75px 64px;
+    }
+
+    .jumbotron-img img {
+        height: 170px;
+        top: 245px;
+        left: 100px;
+    }
+
+    section .container {
+        background-color: #FF9F1C;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        align-items: center;
+        color: white;
+    }
+
+    section .container .title h1 {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    section .container .title span {
+        color: #14213D;
+        font-weight: 100;
+        border-bottom: 3px solid white;
+        padding-bottom: 10px;
+    }
+
+    section .container .text {
+        margin: 0 260px;
+        width: 360px;
+    }
+
+    section .container .text p {
+        font-family: var(--font);
+        font-weight: 300;
+        color: black;
+        font-size: 10px;
+    }
+
+    section .container .tools-skill .row-1 {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    section .container .tools-skill .row-1 p {
+        font-family: var(--font);
+        font-weight: 300;
+        color: black;
+        font-size: 10px;
+    }
+
+    section .container .tools-skill .row-1 img {
+        width: 50px;
+    }
+
+    section .about {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 20px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    section .about .img img {
+        width: 200px;
+    }
+
+    section .about .about-me {
+        width: 360px;
+    }
+
+    section .about .about-me h1 {
+        font-family: var(--font);
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: #14213D;
+    }
+
+    section .about .about-me p {
+        font-family: var(--font);
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    section .about .about-me .button-cv {
+        text-align: center;
+        margin: 5px auto;
+        padding: 20px 0;
+    }
+
+    section .about .about-me .button-cv a {
+        background-color: #FF9F1C;
+        padding: 10px 20px;
+        color: #14213D;
+        font-size: 10px;
+    }
+
+    section .bg-contact {
+        background-image: url('../img/bg/bg-maps.jpg');
+        background-size: cover;
+
+    }
+
+    section .contact {
+        background-color: rgba(20, 33, 61, 0.7);
+        color: white;
+        padding: auto;
+        padding-right: 10px;
+    }
+
+    section .contact-info {
+        position: absolute;
+        bottom: 175px;
+        left: 40px;
+    }
+
+    section .contact h1 {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+        width: 135px;
+        padding-bottom: 10px;
+    }
+
+    section .contact p {
+        font-family: var(--font);
+        font-weight: 100;
+        font-size: 10px;
+        line-height: 27px;
+    }
+
+    section .contact .contact-label {
+        display: flex;
+        gap: 10px;
+    }
+
+    section .contact .contact-label .img-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4px;
+        gap: 14px;
+    }
+
+    section .contact .contact-label .img-contact img {
+        width: 20px;
+    }
+
+    section .contact .contact-label .text-contact {
+        display: flex;
+        flex-direction: column;
+        padding: 6px 0;
+        gap: 5px;
+    }
+
+    footer {
+        background-color: #14213D;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        gap: 50px;
+    }
+
+    footer .socialmedia {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer .socialmedia img {
+        width: 40px;
+    }
+
+    footer p {
+        font-family: var(--font);
+        font-weight: 100;
+        padding: 1px 0;
+        font-size: 12px;
+    }
+}
