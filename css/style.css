@@ -621,8 +621,8 @@ footer p {
 
     /* Navbar */
     nav {
-        display: block;
-        margin: auto;
+        display: flex;
+        margin: 0;
         position: sticky;
         height: 6vh;
         z-index: 2;
@@ -642,12 +642,12 @@ footer p {
         display: flex;
         align-items: center;
         font-weight: bold;
-        height: 6.5vh;
     }
 
     .nav-brand a {
         color: #14213D;
         font-size: 16px;
+        padding-right: 200px;
     }
 
     .nav-brand span {
@@ -759,8 +759,10 @@ footer p {
 
     .jumbotron-img img {
         height: 170px;
-        top: 245px;
-        left: 100px;
+        width: 200px;
+        top: 240px;
+        margin: 0 auto;
+        left: 80px;
     }
 
     section .container {
