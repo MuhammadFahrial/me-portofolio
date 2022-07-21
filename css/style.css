@@ -641,6 +641,8 @@ footer p {
     .nav-brand {
         display: flex;
         align-items: center;
+        justify-content: left;
+        float: left;
         font-weight: bold;
     }
 
@@ -759,10 +761,8 @@ footer p {
 
     .jumbotron-img img {
         height: 170px;
-        width: 200px;
-        top: 234px;
-        margin: 0 auto;
-        left: 80px;
+        top: 241px;
+        left: 88px
     }
 
     section .container {
