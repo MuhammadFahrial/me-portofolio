@@ -19,7 +19,6 @@ body {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    position: relative;
     box-sizing: border-box;
 }
 
@@ -28,13 +27,12 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: auto;
     position: sticky;
     padding: 0 135px;
     height: 70px;
     align-items: center;
     z-index: 2;
-    top: 0;
+    top: 0px;
     background-color: white;
 }
 
@@ -314,7 +312,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-
 
     .wrap {
         width: 100%;
@@ -626,7 +623,7 @@ footer p {
         margin: 0;
         position: sticky;
         height: 6vh;
-        z-index: 2;
+        z-index: 3;
         top: 0;
         background-color: white;
     }
@@ -886,8 +883,10 @@ footer p {
 
     section .contact-info {
         position: absolute;
-        bottom: 175px;
         left: 40px;
+        top: 1295px;
+        z-index: 2;
+
     }
 
     section .contact h1 {
@@ -937,6 +936,8 @@ footer p {
         text-align: center;
         padding: 30px 0;
         gap: 50px;
+        position: relative;
+        bottom: 0;
     }
 
     footer .socialmedia {
