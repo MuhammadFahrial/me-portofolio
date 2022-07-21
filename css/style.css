@@ -151,6 +151,7 @@ section .container {
     padding-top: 60px;
     align-items: center;
     color: white;
+    z-index: 2;
 }
 
 section .container .title h1 {
@@ -635,20 +636,22 @@ footer p {
         position: absolute;
         right: 18px;
         width: 30px;
-        top: 13px;
+        top: 10px;
     }
 
     .nav-brand {
         display: flex;
         align-items: center;
         justify-content: left;
-        float: left;
+        position: absolute;
+        left: 10px;
+        top: 16px;
         font-weight: bold;
     }
 
     .nav-brand a {
         color: #14213D;
-        font-size: 16px;
+        font-size: 20px;
         padding-right: 200px;
     }
 
@@ -709,7 +712,7 @@ footer p {
 
     .jumbotron-information {
         font-family: var(--font);
-        width: 360px;
+        width: 330px;
     }
 
     .jumbotron-information h3 {
@@ -756,13 +759,14 @@ footer p {
         width: 100px;
         height: 100px;
         padding: 50px 20px;
-        margin: 40px 90px 75px 64px;
+        margin: 40px 93px 75px 64px;
     }
 
     .jumbotron-img img {
         height: 170px;
-        top: 241px;
-        left: 88px
+        top: 242px;
+        left: 88px;
+        z-index: 0;
     }
 
     section .container {
@@ -773,6 +777,7 @@ footer p {
         padding-top: 30px;
         align-items: center;
         color: white;
+        position: relative;
     }
 
     section .container .title h1 {
@@ -791,7 +796,7 @@ footer p {
 
     section .container .text {
         margin: 0 260px;
-        width: 360px;
+        width: 330px;
     }
 
     section .container .text p {
@@ -806,7 +811,7 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px;
+        gap: 20px;
         margin-top: 20px;
     }
 
@@ -836,7 +841,7 @@ footer p {
     }
 
     section .about .about-me {
-        width: 360px;
+        width: 330px;
     }
 
     section .about .about-me h1 {
