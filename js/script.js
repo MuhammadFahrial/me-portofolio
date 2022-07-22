@@ -4,7 +4,6 @@ const jumbotronI = document.querySelector('.jumbotron-information');
 const jumbotronImg = document.querySelector('.jumbotron-img');
 const skill = document.getElementById('container-skill');
 
-console.log(skill);
 window.addEventListener('load', function(){
     jumbotronI.classList.toggle('active-jumbotron-information');
 
@@ -12,7 +11,6 @@ window.addEventListener('load', function(){
 
     skill.classList.toggle('container-active');
 });
-
 
 icon.addEventListener('click', function(){
     nav.classList.toggle('active');

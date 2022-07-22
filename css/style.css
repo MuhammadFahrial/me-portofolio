@@ -338,7 +338,7 @@ footer p {
 @media screen and (max-width: 768px) {
 
     .wrap {
-        width: 100%;
+        width: 100vh;
     }
 
     /* Navbar */
@@ -437,7 +437,6 @@ footer p {
         margin-top: 30px;
         display: flex;
         justify-content: center;
-        padding-right: 30px;
     }
 
     .jumbotron-information a {
@@ -639,6 +638,7 @@ footer p {
 
     .wrap {
         width: 100%;
+        overflow: hidden;
     }
 
     /* Navbar */
@@ -704,7 +704,7 @@ footer p {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
 
     .nav-item ul li a {
@@ -720,17 +720,18 @@ footer p {
     /* hero */
     .jumbotron {
         background-color: #14213D;
-        height: 360px;
+        height: 380px;
+        width: 100vw;
     }
 
     .jumbotron .container {
-        height: 400px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         color: white;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .jumbotron-information {
@@ -762,10 +763,9 @@ footer p {
     }
 
     .jumbotron-information .button-talk {
-        margin-top: 15px;
+        margin: 20px;
         display: flex;
         justify-content: center;
-        padding-right: 30px;
     }
 
     .jumbotron-information a {
@@ -777,18 +777,24 @@ footer p {
         font-size: 10px;
     }
 
+    .container-jumbotron-img {
+        width: 100vw;
+    }
+
     .jumbotron-img {
         background-color: #FF9F1C;
         width: 100px;
         height: 100px;
-        padding: 50px 20px;
-        margin: 40px 93px 75px 64px;
+        padding: 15px 15px;
+        margin: 20px auto;
     }
 
     .jumbotron-img img {
         height: 170px;
-        top: 242px;
-        left: 88px;
+        top: 266px;
+        right: 0;
+        left: 0;
+        margin: auto;
         z-index: 0;
     }
 
@@ -831,11 +837,12 @@ footer p {
 
     section .container .tools-skill .row-1 {
         text-align: center;
+        width: 90vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        margin-top: 20px;
+        margin: 20px 50px;
     }
 
     section .container .tools-skill .row-1 p {
