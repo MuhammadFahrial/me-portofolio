@@ -916,11 +916,11 @@ footer p {
     }
 
     section .contact-info {
-        position: absolute;
+/*         position: absolute;
         left: 40px;
         top: 1320px;
         z-index: 2;
-
+ */     margin-left: -180px;
     }
 
     section .contact h1 {
